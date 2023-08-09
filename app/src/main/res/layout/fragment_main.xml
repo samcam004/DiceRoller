@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="5dp"
+        android:layout_height="300dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toEndOf="@+id/tlDice"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TableLayout
+        android:id="@+id/tlDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="500dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivFour"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d4_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfFour"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetRight="15dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivSix"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d6_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfSix"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivEight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d8_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfEight"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddEight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivTen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d10_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfTen"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivTwelve"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d12_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfTwelve"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubTwelve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddTwelve"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivTwenty"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d20_blank" />
+
+            <TextView
+                android:id="@+id/tvNumOfTwenty"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btnSubTwenty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnAddTwenty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="15dp"
+                android:insetTop="6dp"
+                android:insetRight="15dp"
+                android:insetBottom="6dp"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tlModifier"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModFour"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModTwelve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etModTwenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="+0"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlDice" />
+
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

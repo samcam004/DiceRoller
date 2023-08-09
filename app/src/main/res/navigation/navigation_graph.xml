@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.samcam.project4.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_rollFragment"
+            app:destination="@id/rollFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rollFragment"
+        android:name="com.samcam.project4.ui.main.RollFragment"
+        android:label="fragment_roll"
+        tools:layout="@layout/fragment_roll">
+        <argument
+            android:name="NumOfFour"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="NumOfSix"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="NumOfEight"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="NumOfTen"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="NumOfTwelve"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="NumOfTwenty"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d4Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d6Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d8Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d10Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d12Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="d20Mod"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
